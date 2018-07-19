@@ -1,0 +1,33 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "no",
+  "scripts": {
+    "test": "no"
+  },
+  "repository": {
+    "type": "git",
+    "url": "no"
+  },
+  "keywords": [
+    "no"
+  ],
+  "author": "no",
+  "license": "ISC",
+  "dependencies": {
+    "babel-plugin-dynamic-import-node": "^2.0.0",
+    "babel-register": "^6.26.0",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "mini-css-extract-plugin": "^0.4.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "webpack-bundle-analyzer": "^2.13.1",
+    "webpack-livereload-plugin": "^2.1.1"
+  }
+}

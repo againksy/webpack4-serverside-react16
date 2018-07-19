@@ -23,7 +23,7 @@ module.exports = {
 	context: __dirname,
 
 	entry: {
-		'app': './src/index.js',
+		'app': './index.js',
 	},
 	output: {
 		filename: "js/[name].js",
@@ -35,7 +35,7 @@ module.exports = {
       chunks: "all",
 			cacheGroups: {
 				vendor: {
-					test: /node_modules/, // you may add "vendor.js" here if you want to
+					test: /node_modules/,
 					name: "vendor",
 					chunks: "initial",
 					enforce: true
@@ -50,9 +50,6 @@ module.exports = {
       index: '/'
     },
   },
-	// historyApiFallback: {
-	//   index: '/'
-	// },
 
 	watch: env === "development",
 
@@ -66,13 +63,11 @@ module.exports = {
 
 	resolveLoader: {
 		modules: ['node_modules'],
-		// moduleTemplates: ['*-loader', '*'],
 		extensions: ['.js', '.json']
 	},
 
 	module: {
 		rules: [
-			// { test: /\.ejs$/, loader: 'ejs-loader?variable=data' },
       {
         test: /\.js$/,
         loader: 'babel-loader',

@@ -73,7 +73,7 @@ module.exports = {
         loader: 'babel-loader',
         exclude: /node_modules/,
         query: {
-          plugins: ["transform-decorators-legacy", "dynamic-import-node"],
+          plugins: ["transform-decorators-legacy", "syntax-dynamic-import"],
           presets: [ 'react', [  'es2015'  ],  'stage-0',  ]
         }
       },

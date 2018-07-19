@@ -16,7 +16,6 @@
   "author": "no",
   "license": "ISC",
   "dependencies": {
-    "babel-register": "^6.26.0",
     "body-parser": "^1.18.3",
     "cookie-parser": "^1.4.3",
     "ejs": "^2.6.1",
@@ -27,5 +26,8 @@
     "redux": "^4.0.0",
     "webpack-bundle-analyzer": "^2.13.1",
     "webpack-livereload-plugin": "^2.1.1"
+  },
+  "devDependencies": {
+    "@babel/register": "^7.0.0-beta.54"
   }
 }

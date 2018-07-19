@@ -1,6 +1,7 @@
-require('babel-register')({
-  plugins: ["transform-decorators-legacy", "dynamic-import-node"],
-  presets: ['es2015', 'stage-0', 'react'],
+require('@babel/register')({
+  plugins: ["dynamic-import-node", "transform-decorators-legacy"],
+  // presets: ['es2015', 'stage-0', 'react'],
+  presets: [ '@babel/preset-env', '@babel/preset-react' ],
   extensions: [".es6", ".es", ".jsx", ".js"]
 });
 

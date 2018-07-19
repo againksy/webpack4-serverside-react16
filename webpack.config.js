@@ -74,7 +74,7 @@ module.exports = {
         exclude: /node_modules/,
         query: {
           plugins: ["transform-decorators-legacy", "syntax-dynamic-import"],
-          presets: [ 'react', [  'es2015'  ],  'stage-0',  ]
+          presets: [ '@babel/preset-env', '@babel/preset-react' ]
         }
       },
       {

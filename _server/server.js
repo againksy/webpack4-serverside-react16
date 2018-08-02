@@ -1,8 +1,13 @@
-require('@babel/register')({
-  plugins: ["dynamic-import-node", "transform-decorators-legacy"],
-  // presets: ['es2015', 'stage-0', 'react'],
-  presets: [ '@babel/preset-env', '@babel/preset-react' ],
-  extensions: [".es6", ".es", ".jsx", ".js"]
+// require('@babel/register')({
+//   plugins: ["dynamic-import-node", "transform-decorators-legacy"],
+//   // presets: ['es2015', 'stage-0', 'react'],
+//   presets: [ '@babel/preset-env', '@babel/preset-react' ],
+//   extensions: [".es6", ".es", ".jsx", ".js"]
+// });
+require("@babel/register")({
+  plugins: ['dynamic-import-node', "@babel/plugin-proposal-function-bind"],
+  presets: [ [ '@babel/preset-env',
+  ], '@babel/preset-react', ],
 });
 
 const express = require('express');

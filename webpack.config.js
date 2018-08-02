@@ -73,8 +73,10 @@ module.exports = {
         loader: 'babel-loader',
         exclude: /node_modules/,
         query: {
-          plugins: ["transform-decorators-legacy", "syntax-dynamic-import"],
-          presets: [ '@babel/preset-env', '@babel/preset-react' ]
+          "plugins": ["@babel/plugin-syntax-dynamic-import",
+            "@babel/plugin-proposal-function-bind"],
+          presets: [ '@babel/preset-react',
+            '@babel/preset-env', ]
         }
       },
       {

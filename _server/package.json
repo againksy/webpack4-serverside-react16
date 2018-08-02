@@ -28,6 +28,10 @@
     "webpack-livereload-plugin": "^2.1.1"
   },
   "devDependencies": {
-    "@babel/register": "^7.0.0-beta.54"
+    "@babel/core": "^7.0.0-beta.54",
+    "@babel/plugin-proposal-function-bind": "^7.0.0-beta.55",
+    "@babel/preset-env": "^7.0.0-beta.54",
+    "@babel/register": "^7.0.0-beta.54",
+    "babel-plugin-dynamic-import-node": "^2.0.0"
   }
 }
